@@ -9,7 +9,7 @@ public class WordFrequencyCounterTest {
         Map<String, Integer> unsortedWords = new HashMap<>();
         new WordFrequencyCounter().parseFileToMap(unsortedWords, inputFile);
 
-        System.out.println(unsortedWords);
+//        System.out.println(unsortedWords);
 
         SortedMap<String, Integer> sortedWords = new TreeMap<>(new Comparator<>() {
             private final TreeMap<String, Integer> map = new TreeMap<>(unsortedWords);

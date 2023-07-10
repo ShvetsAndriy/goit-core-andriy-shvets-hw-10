@@ -20,7 +20,7 @@ public class JsonCreatorTest {
         String json = gson.toJson(users.toArray());
 //        System.out.println(json);
 
-        File outputFile = new File("user.json");
+        File outputFile = new File("user-task2.json");
         try (FileWriter writer = new FileWriter(outputFile))
         {
             writer.write(json);
