@@ -20,7 +20,8 @@ public class PhoneChecker {
     }
 
     private boolean rightNumber (String phoneNumber) {
-        String regex = "(\\d|\\()\\d\\d(-|\\d)(\\d|\\))(\\d|\\s)\\d(-|\\d)\\d(\\d|-)(\\d{2}|\\d{4})";
+        String regex = "(\\(\\d{3}\\)\\s|\\d{3}-)\\d{3}-\\d{4}";
+//        String regex = "(\\d|\\()\\d\\d(-|\\d)(\\d|\\))(\\d|\\s)\\d(-|\\d)\\d(\\d|-)(\\d{2}|\\d{4})";
         return phoneNumber.matches(regex);
     }
 }
